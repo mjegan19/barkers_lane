@@ -1,0 +1,202 @@
+<!-- 
+  Version 1.1
+  Last Edited by: Michael Egan
+  Last Edit Date: 27 NOV 21
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barker's Lane | Make a booking</title>
+  <meta name="description" content="Barkers Lane Dog Grooming specialists. We will transform your canine's appearance from drab to fab.  Check out our services page for what we provide and be sure to book in your dog for their next grooming appointment over on our Bookings page!">
+  <meta name="keywords" content="dog grooming, dog grooming near me, dog grooming melbourne, dog grooming greensborough, dog wash, dog wash near me, dog wash melbourne, dog wash greensborough, hydrowash, basic groom, deluxe groom">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1279px) and (min-width: 601px)" href="./css/responsive.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCCCDRTCR7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DCCCDRTCR7');
+  </script>
+  
+  <script src="https://kit.fontawesome.com/0e187a1e44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="contact-bar" class="content-wrap">
+      <div class="contact-left">Book Now! Call 8488 009 176</div>
+      <div class="contact-right"><a href="mailto:enquiries@barkerslane.com.au" title="Email us"><i class="bi bi-envelope-fill"></i> enquiries@barkerslane.com.au</a> </div>
+    </div>
+    <nav id="bg-bar-pink">
+      <div class="content-wrap">
+        <a href="index.html"><img src="./img/barkers-logo.png" alt="Barkers Lane Logo" id="site-logo"></a>
+        <div class="navbar" id="hamburger">
+         <a href="index.html">HOME</a>
+         <a href="index.html#about">ABOUT</a>
+         <a href="service.html">SERVICES</a>
+         <a id="current-pg">BOOKINGS</a>
+         <a href="contact.html">CONTACT</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Page -->
+  <main class="content-wrap">
+    <h2 id="booking">Book in your pooch today!</h2>
+    <section class="booking-form">
+      <form action="confirmed.html">
+      
+        <div class="form-columns">
+          <h4><label for="dname" class="form-hdr-mrgn">Dog's Name</label></h4>
+          <input type="text" class="booking" name="Dog's Name" id="dname" tabindex="1">
+        </div>
+        <div class="form-columns">
+          <h4><label for="dsize" class="form-hdr-mrgn">Size</label></h4>
+          <select name="Dog Size" id="dsize" tabindex="2">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">X-Large</option>
+          </select>
+        </div>
+
+        <div class="booking-form">
+          <div class="form-hdr-mrgn"><h3 id="form-1">Your Details</h3></div>
+          <h4><label for="fname" class="form-hdr-mrgn">Name</label></h4>
+        </div>
+      
+        <div class="form-columns">
+          <input type="text" name="First Name" id="fname" placeholder="First" class="booking" tabindex="3"><br />
+          <label for="lname2"></label>
+          <input type="text" name="Last Name" id="lname2" placeholder="Last" class="booking desktop-hidden" tabindex="4">
+          <h4><label for="email-book" class="form-hdr-mrgn" id="email-book-label">Email</label></h4>
+          <input type="text" name="Email" id="email-book" placeholder="someone@address.com" class="booking" tabindex="5">
+        </div>
+        <div class="form-columns">
+          <label for="lname"></label>
+          <input type="text" name="Last Name" id="lname" placeholder="Last" class="booking form-hidden" tabindex="4">
+          <h4><label for="phone" class="form-hdr-mrgn">Phone</label></h4>
+          <input type="text" name="Phone Number" id="phone" class="booking" tabindex="6">
+        </div>
+      
+        <div class="form-columns">
+          <div class="form-hdr-mrgn"><h4>Select a service</h4></div>
+            <div class="form-options">
+            <input type="radio" name="Choose Hydrowash" value="hydrowash" id="hydrowash" tabindex="7">
+            <label for="hydrowash">Hydrowash</label><br />
+            <input type="radio" name="Choose Basic Groom" value="basic" id="basic-grm" tabindex="8">
+            <label for="basic-grm">Basic Groom</label><br />
+            <input type="radio" name="Choose Deluxe Groom" value="deluxe" id="deluxe-grm" tabindex="9">
+            <label for="deluxe-grm">Deluxe Groom</label><br />
+          </div>
+        </div>
+
+        <div class="form-columns extras">
+          <div class="form-hdr-mrgn"><h4>Add Extras</h4></div>
+          <div class="form-options">            
+            <input type="checkbox" name="Add Flea Wash" id="flea" tabindex="10">
+            <label for="flea">Flea Wash</label><br />
+            <input type="checkbox" name="Add Nail Trim" id="nail" tabindex="11">
+            <label for="nail">Nail Trim</label><br />
+            <input type="checkbox" name="Add Anal Gland Express" id="gland" tabindex="12">
+            <label for="gland">Anal Gland Express</label><br />
+            <input type="checkbox" name="Add De-Shed" id="shed" tabindex="13">
+            <label for="shed">De-Shed</label><br />
+            <input type="checkbox" name="Add Hand Stripping" id="strip" tabindex="14">
+            <label for="strip">Hand Stripping</label><br />
+            <input type="checkbox" name="Add Teeth De-scale" id="scale" tabindex="15">
+            <label for="scale">Teeth De-Scale</label><br />
+            <input type="checkbox" name="Add Teeth Brush" id="brush" tabindex="16">
+            <label for="brush">Teeth Brush</label><br />
+            <input type="checkbox" name="Add Soft Paws" id="soft" tabindex="17">
+            <label for="soft">Soft Paws</label><br />
+          </div>
+        </div>
+      
+        <div class="form-columns">
+          <h4 class="appoint"><label for="date" class="form-hdr-mrgn">Appointment Date</label></h4>
+          <input type="date" name="Choose Appointment Date" id="date" class="appointment" tabindex="18">
+        </div>
+        <div class="form-columns">
+          <h4 class="appoint"><label for="time" class="form-hdr-mrgn">Appointment Time</label></h4>
+          <input type="time" name="Choose Appointment Time" id="time" class="appointment" tabindex="19">
+        </div>
+        
+        <div class="booking-form">
+          <h4><label for="comments" class="form-hdr-mrgn">Comments</label></h4>
+          <textarea name="Tell us anything important" id="comments" class="comments form-input-mrgn" tabindex="20" placeholder="Is there anything we should know?"></textarea>
+          <input type="submit" value="Submit Booking >>" class="btn btn-2x btn-booking" tabindex="21">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="clr">
+    <div class="content-wrap">
+      <div id="footer-container">
+        <div class="footer-box" id="footer-contact">         
+          <h4>Contact Details</h4>
+          <p id="address">
+            Barkers Lane Grooming Caravan<br />
+            63 Mudbury Avenue<br />
+            Greensborough VIC 3088
+          </p>
+          <p>
+            8488 009 176
+          </p>
+          <p>
+            <a href="mailto:enquiries@barkerslane.com.au" title="Email us">enquiries@barkerslane.com.au</a> 
+          </p>
+        </div>  
+        <div class="footer-box" id="footer-nav">
+          <h4>Site Navigation</h4>
+          <a href="index.html" title="Main Page">Home</a><br />
+          <a href="index.html#about" title="About Section">About Barkers Lane</a><br />
+          <a href="service.html" title="Services we offer">Services we offer</a><br />
+          <a href="bookings.html" title="Make a booking">Make a booking</a><br />
+          <a href="contact.html" title="Get in touch with us">Contact Barkers Lane</a><br />
+        </div>  
+        <div class="footer-box" id="footer-socials">
+          <h4>Connect with Barkers Lane</h4>
+          <div>
+            <form action="bookings.html">
+              <label for="email">Sign up for our newsletter</label><br />
+              <input type="text" id="email" name="email" placeholder="Enter your email address" class="newsletter">
+              <input type="submit" value="Submit" class="btn">
+            </form>
+          </div>
+          <div>Give us a like on our socials 🐶</div>
+          <div>
+            <a href="https://www.facebook.com" title="Open our Facebook page in new window" target="_blank"><i class="bi bi-facebook" role="img" aria-label="Facebook"></i></a>
+            <a href="https://www.twitter.com" title="Open our Twitter page in new window" target="_blank"><i class="bi bi-twitter" role="img" aria-label="Twitter"></i></a>
+            <a href="https://www.instagram.com" title="Open our Instagram page in new window" target="_blank"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
+            <a href="https://www.youtube.com" title="Open our YouTube page in new window" target="_blank"><i class="bi bi-youtube" role="img" aria-label="YouTube"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <p>© 2021 Barkers Lane | Site Design - 
+            <a 
+              href="https://mixelweb.dev"
+              target="_blank"
+            >MixelWeb.dev</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

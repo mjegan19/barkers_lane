@@ -1,0 +1,234 @@
+<!-- 
+  Version 1.1
+  Last Edited by: Michael Egan
+  Last Edit Date: 27 NOV 21
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Barker's Lane | Dog Grooming</title>
+   <meta name="description" content="Barkers Lane Dog Grooming specialists. We will transform your canine's appearance from drab to fab.  Check out our services page for what we provide and be sure to book in your dog for their next grooming appointment over on our Bookings page!">
+   <meta name="keywords" content="dog grooming, dog grooming near me, dog grooming melbourne, dog grooming greensborough, dog wash, dog wash near me, dog wash melbourne, dog wash greensborough, hydrowash, basic groom, deluxe groom">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="./css/styles.css" />
+   <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css" />
+   <link rel="stylesheet" media="screen and (max-width: 1279px) and (min-width: 601px)" href="./css/responsive.css" />
+ 
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCCCDRTCR7"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'G-DCCCDRTCR7');
+   </script>
+   
+   <script src="https://kit.fontawesome.com/0e187a1e44.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+   <header>
+     <div id="contact-bar" class="content-wrap">
+       <div class="contact-left">Book Now! Call 8488 009 176</div>
+       <div class="contact-right"><a href="mailto:enquiries@barkerslane.com.au" title="Email us"><i class="bi bi-envelope-fill"></i> enquiries@barkerslane.com.au</a> </div>
+     </div>
+     <nav id="bg-bar-pink">
+       <div class="content-wrap">
+         <a href="index.html"><img src="./img/barkers-logo.png" alt="Barkers Lane Logo" id="site-logo"></a>
+         <div class="navbar" id="hamburger">
+          <a id="current-pg">HOME</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="service.html">SERVICES</a>
+          <a href="bookings.html">BOOKINGS</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+         </div>
+       </div>
+     </nav>
+   </header>
+
+  <!-- Carousel -->
+  <section class="carousel content-wrap">
+    <h1 class="mobile-hidden">Barkers Lane</h1>
+    <h3>Your dog grooming specialists!</h3>
+    <p>We put your pooch on a pedestal.</p>
+  </section>
+
+  <!-- Main Page -->
+  <main>
+    <!-- Icon bar -->
+    <figure class="content-wrap" id="story-cards">
+      <h2>This is how we do it...</h2>
+      <div class="icon-container">
+        <div class="icon-info-card" id="info-card-1">
+          <i class="fas fa-book-open fa-4x"></i>
+          <p>BOOK</p>
+        </div>       
+        <div class="icon-arrow" id="arrow-1">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-2">
+          <i class="fas fa-car fa-4x"></i>
+          <p>DROP OFF</p>
+        </div>        
+        <div class="icon-arrow" id="arrow-2">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-3">
+          <i class="fas fa-soap fa-4x"></i>
+          <p>SUDS</p>      
+        </div>
+        <div class="icon-arrow" id="arrow-3">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-4">
+          <i class="fas fa-shower fa-4x"></i>
+          <p>RINSE</p>      
+        </div>
+        <div class="icon-arrow" id="arrow-4">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-5">
+          <i class="fas fa-sun fa-4x"></i>
+          <p>DRY</p>      
+        </div>
+        <div class="icon-arrow" id="arrow-5">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-6">
+          <i class="fas fa-cut fa-4x"></i>
+          <p>GROOM</p>      
+        </div>        
+        <div class="icon-arrow" id="arrow-6">
+          <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>        
+        <div class="icon-info-card" id="info-card-7">
+          <i class="fas fa-dog fa-4x"></i>
+          <p>SPARKLE</p>      
+        </div>
+      </div>
+    </figure> 
+
+    <!-- Recommended for you section -->
+    <section class="content-wrap">
+      <h2 id="recommend">Recommended for you</h2>
+      <div id="rec-box-container">        
+        <div class="rec-box" id="rec-box-1">   
+          <img src="./img/autri-taheri-l0Gq4BmboYY-unsplash.jpg" alt="Basic Dog Wash">
+          <h4>Basic Dog Wash</h4>
+          <p>Is your dog a bit on the smelly side?&nbsp; Book in now for a deep clean with odor neutralising shampoo.</p>
+          <form action="bookings.html">
+            <input type="submit" value="Book Now >>" class="btn btn-2x">
+          </form>
+        </div>
+        <div class="rec-box" id="rec-box-2">   
+          <img src="./img/j-balla-photography-cMtiWjiAvq4-unsplash.jpg" alt="Wash & Brush">
+          <h4>Wash and Brush</h4>
+          <p>Is your dog in a bit of a tangle?&nbsp; Our wash and brush option will have your dog smelling clean, fresh and free of knots and tangles.</p>
+          <form action="bookings.html">
+            <input type="submit" value="Book Now >>" class="btn btn-2x">
+          </form>
+        </div>
+        <div class="rec-box" id="rec-box-3">   
+          <img src="./img/elena-taranenko-5hpvOt3tIUA-unsplash.jpg" alt="Deluxe Trim">
+          <h4>Fancy Trim</h4>
+          <p>Is your dog looking more like cousin it?&nbsp; Book in now to have their hair cut and professionally styled</p>
+          <form action="bookings.html">
+            <input type="submit" value="Book Now >>" class="btn btn-2x">
+          </form>
+        </div>
+        <div class="rec-box" id="rec-box-4">   
+          <img src="./img/joe-caione-qO-PIF84Vxg-unsplash.jpg" alt="Nail Cutting">
+          <h4>Nail Cutting</h4>
+          <p>It's very important to take care when cutting a canine's nails.&nbsp; We take very special care when trimming your dog's nails to ensure their safety!</p>
+          <form action="bookings.html">
+            <input type="submit" value="Book Now >>" class="btn btn-2x">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special offers -->
+    <section class="content-wrap">
+      <div id="offers-bar">
+        <h2>December Savings Special</h2>
+        <h3>1st time bookings receive 15% off!</h3>
+        <p>* Terms & Conditions Apply. Not available with any other offer.</p>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="content-wrap">
+      <div class="about-box-left">
+        <h2 id="about">About Barkers Lane</h2>
+        <h3>Hi there! I'm Laura, and I'm a specialist dog groomer 🐩</h3>
+        <p>My passion for caring for animals started from an early age.  Like most, I adopted and cared for many pets growing up.  Learning to care for my own canine's grooming and hygiene needs helped foster an interest in providing this service for other people's pets. </p>
+        <p>After completing a Cert III in dog grooming, I embarked upon a journey of dogscovery starting my grooming business Barker's Lane.  I made it my objective to deliver cute haircuts for canines in a stress free and loving environment.</p>
+        <p>Throughout this journey, I've ensured the business is kept up to date and compliant, having attended seminars on dog behaviours and handling, all to provide your pooch with a pleasant experience in the salon!</p>
+      </div>
+      <div class="about-box-right" title="About me section, Laura's portrait image"></div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="clr">
+    <div class="content-wrap">
+      <div id="footer-container">
+        <div class="footer-box" id="footer-contact">         
+          <h4>Contact Details</h4>
+          <p id="address">
+            Barkers Lane Grooming Caravan<br />
+            63 Mudbury Avenue<br />
+            Greensborough VIC 3088
+          </p>
+          <p>
+            8488 009 176
+          </p>
+          <p>
+            <a href="mailto:enquiries@barkerslane.com.au" title="Email us">enquiries@barkerslane.com.au</a> 
+          </p>
+        </div>  
+        <div class="footer-box" id="footer-nav">
+          <h4>Site Navigation</h4>
+          <a href="index.html" title="Main Page">Home</a><br />
+          <a href="index.html#about" title="About Section">About Barkers Lane</a><br />
+          <a href="service.html" title="Services we offer">Services we offer</a><br />
+          <a href="bookings.html" title="Make a booking">Make a booking</a><br />
+          <a href="contact.html" title="Get in touch with us">Contact Barkers Lane</a><br />
+        </div>  
+        <div class="footer-box" id="footer-socials">
+          <h4>Connect with Barkers Lane</h4>
+          <div>
+            <form action="index.html">
+              <label for="email">Sign up for our newsletter</label><br />
+              <input type="text" name="Email" id="email" placeholder="Enter your email address" class="newsletter">
+              <input type="submit" value="Submit" class="btn">
+            </form>
+          </div>
+          <div>Give us a like on our socials 🐶</div>
+          <div>
+            <a href="https://www.facebook.com" title="Open our Facebook page in new window" target="_blank"><i class="bi bi-facebook" role="img" aria-label="Facebook"></i></a>
+            <a href="https://www.twitter.com" title="Open our Twitter page in new window" target="_blank"><i class="bi bi-twitter" role="img" aria-label="Twitter"></i></a>
+            <a href="https://www.instagram.com" title="Open our Instagram page in new window" target="_blank"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
+            <a href="https://www.youtube.com" title="Open our YouTube page in new window" target="_blank"><i class="bi bi-youtube" role="img" aria-label="YouTube"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <p>© 2021 Barkers Lane | Site Design - 
+            <a 
+              href="https://mixelweb.dev"
+              target="_blank"
+            >MixelWeb.dev</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

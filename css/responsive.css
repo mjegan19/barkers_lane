@@ -1,0 +1,358 @@
+/* 
+  Version 1.1
+  Last Edited by: Michael Egan
+  Last Edit Date: 29 NOV 21
+ */
+
+/* General Site Layout */
+/* .mobile-hidden{
+  display: none;
+} */
+
+h2 {
+  font-size: 2.2rem;
+  margin: 2rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.content-wrap {
+  width: 100%;
+}
+
+/* Navigation */
+@media screen and (max-width: 800px) and (min-width: 601px) {
+  #site-logo {
+    top: 23px;
+    width: 125px;
+  }
+
+  .navbar a {
+    padding: 25px 10px;
+    color: floralwhite;
+  }
+  
+  .navbar a:first-child {
+    margin-left: 150px;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+}
+
+#footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-box {
+  width: 33%;
+  height: inherit;
+  vertical-align: top;
+  margin-top: 1rem;
+  padding: 0 1.25rem 5rem;
+}
+
+.footer-box p {
+  margin: 1rem 0;
+}
+
+#footer-contact {
+  position: relative;
+  left: 0;
+}
+
+#footer-contact a {
+  overflow-wrap: break-word;
+}
+
+#footer-nav {
+  position: relative;
+  left: 0;
+}
+
+#footer-socials {
+  position: relative;
+  left: 0;
+}
+
+.footer-btm {
+  top: initial;
+  bottom: 25px;
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+
+/* Index Page */
+/* Carousel */
+.carousel {
+  height: 400px;
+  padding: 100px 0 0 25px;
+  background: #393E41;
+  color: floralwhite;
+  background: url('../img/gabriel-crismariu-IgQo1_gUzBY-unsplash.jpg') no-repeat center center/cover;
+}
+
+/* Informative 'How we do it cards' - hide for mobile */
+#story-cards {
+  display: none;
+}
+
+/* Recommended for you section */
+#recommend,
+#services,
+#pricing,
+#sizing,
+#booking,
+#contact-hdr,
+#confirm-hdr,
+#received-hdr {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+#pricing,
+#sizing {
+  margin-top: 2rem;
+}
+
+
+#rec-box-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#rec-box-1,
+#rec-box-2,
+#rec-box-3,
+#rec-box-4 {
+  /* height: 100%; */
+  position: relative;
+  margin: 1.75rem auto;
+  left: 0;
+}
+
+/* Offers Bar */
+#offers-bar {
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+  padding: 0.75rem 0;
+  background: #fdcff3 url('../img/v935-aum-10.jpg') no-repeat center center/cover;
+  border-radius: 0;
+  text-shadow: 2px 2px 3px floralwhite, -2px -2px 3px floralwhite;
+}
+
+#offers-bar h2 {
+  margin: 0 2rem 0;
+}
+
+#offers-bar h3 {
+  margin: 0 2rem 0;
+  color: deeppink;
+}
+
+#offers-bar p {
+  margin: 0 2rem 0;
+  color: #00A6FB;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-box-left {
+  float: none;
+  width: 100%;
+  height: 100%;
+}
+
+.about-box-left {
+  padding: 0 2rem 0;
+}
+
+.about-box-right {
+  width: 100%;
+  margin: 2rem 0 4rem;
+}
+
+/* Services Page */
+.service-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.service-box {
+  /* width: 100%; */
+  height: 530px;
+  margin: 0.75rem auto;
+  padding-bottom: 2rem;
+}
+
+.service-box img {
+  width: 100%;
+}
+
+.service-other-container {
+  margin: 0.75rem auto;
+  width: 98%;
+  background: #FEEBFA;
+  padding: 0 5%;
+}
+
+.service-other {
+  display: inline-block;
+  width: 48%;
+  height: 100%;
+  vertical-align: top;
+  border: none;
+}
+
+.service-other img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.service-other ul {
+  padding-bottom: 1.5rem;
+}
+
+.prices-box {
+  width: 100%;
+}
+
+table {
+  width: 98%;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 3px;
+}
+
+td:first-child {
+  padding: 3px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 801px) {
+  table {
+    font-size: 1rem;
+  }
+}
+
+.sizing {
+  margin-top: 3rem;
+}
+
+.dog-sizing {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dog-size-box {
+  /* width: 280px; */
+  position: relative;
+  margin: 1.75rem auto;
+  left: 0;
+}
+
+.dog-size-box img {
+  width: 100%;
+}
+
+.dog-size-box p {
+  margin: 0.5rem 0.5rem 0;
+}
+
+/* Bookings Page */
+.booking-form {
+  width: 100%;
+}
+
+.form-columns {
+  width: 87%;
+}
+
+.form-hdr-mrgn,
+.confirm-hdr-mrgn,
+.received-hdr-mrgn,
+.form-options,
+.btn-booking {
+  margin-left: 2rem;
+}
+
+#form-1 {
+  margin-top: 1rem;
+}
+
+.appointment {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.comments {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 87%;
+}
+
+.comments-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.desktop-hidden {
+  display: block;
+}
+
+.form-hidden {
+  display: none;
+}
+
+#lname2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking,
+#dsize {
+  width: 100%;
+  margin: 0 2rem;
+}
+
+#contact-pg {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-mrgn {
+  padding-left: 2rem;
+  order: 1;
+}
+
+.contact-form {
+  order: 2;
+}
